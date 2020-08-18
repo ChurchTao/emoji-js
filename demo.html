@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="i" type="text">
+<div id="out"></div>
+<button onclick="f()">提交</button>
+</body>
+<script  type="text/javascript" src="./emoji-js.js"></script>
+<script>
+    var emojiUtil = EmojiUtil()
+    function f() {
+        var str = document.getElementById("i").value
+        document.getElementById("out").innerHTML = emojiUtil.emoji2string(str)
+    }
+</script>
+</html>
